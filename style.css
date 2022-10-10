@@ -29,6 +29,7 @@ body {
   aspect-ratio: 1;
   position: absolute;
   border-radius: 50%;
+  animation: earthAnim 25s infinite linear;
 }
 
 .day {
@@ -38,5 +39,15 @@ body {
 .night {
   background: url("images/earth-night.jpg");
   clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+@keyframes earthAnim {
+  0% {
+    background-position: 0 center;
+  }
+
+  100% {
+    background-position: 192rem center;
+  }
 }
 /* End: earth Style */
