@@ -22,3 +22,21 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Start: Earth Style */
+.earth {
+  width: 100%;
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.day {
+  background: url("images/earth-day.jpg");
+}
+
+.night {
+  background: url("images/earth-night.jpg");
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+/* End: earth Style */
